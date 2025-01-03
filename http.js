@@ -16,4 +16,7 @@ const server = http.createServer((req, res) => {
 });
 
 //subir o servidor
-server.listen(5000);
+server.listen(PORT, HOST, () => {
+    console.log(`Servidor rodando em http://${HOST}:${PORT}`);
+    
+})
